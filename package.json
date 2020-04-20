@@ -1,13 +1,19 @@
 {
-  "name": "natspec-parser",
+  "name": "natspec-typedoc",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Generate TypeDoc compatible comments out of Solidity NatSpec comments",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "tsc --noEmit"
+    "test": "tsc --noEmit",
+    "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "Christian Maniewski <chris@colony.io>",
   "license": "MIT",
   "devDependencies": {
     "prettier": "2.0.4",
